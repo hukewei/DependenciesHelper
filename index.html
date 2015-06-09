@@ -41,7 +41,7 @@
     </div>
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-				<textarea class="lined" id="text_to_convert" rows="24" cols="103" placeholder="Please paste the generated warnings/errors"></textarea>
+				<textarea class="lined" id="text_to_convert" style="width:100%" rows="19" placeholder="Please paste the generated warnings/errors"></textarea>
 			</div>
 		</div>
     <div class="row">
@@ -55,7 +55,6 @@
       </div>
     </div>
 	</div>
-  <br/>
   <div class="container hidden_block" id="hidden_info">
       <div class="col-md-8 col-md-offset-2" >
         <div class="alert alert-danger fade in" role="alert">
@@ -69,17 +68,16 @@
   <div class="container hidden_block" id="hidden_block">
     <div class="row">
       <div class="col-md-4 col-md-offset-2">
-          <h3>Result</h3>
+          <h4>Result</h4>
       </div>
-      
-      
+      <div class="col-md-4">
+        <button id="copy" type="button" class="pull-right zclip btn btn-info" data-toggle="tooltip" data-placement="left" title="copied!"><span class="glyphicon glyphicon-copy" aria-hidden="true"></span></button>
+      </div>
       <div class="col-md-8 col-md-offset-2" >
         <pre id="textToCopy">
         </pre>
       </div>
-      <div class="col-md-2 col-md-offset-2">
-        <button id="copy" type="button" class="zclip btn btn-success" data-toggle="tooltip" data-placement="right" title="copied!">Copy</button>
-      </div>
+
     </div>
   </div>
 </body>
