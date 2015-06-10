@@ -24,7 +24,7 @@
 </head>
 <body class="bg-fixed bg-1">
   
-	<div class="container">
+  <div class="container">
     <div class="row">
       <div class="col-md-5 col-md-offset-2">
         <h2>Dependencies helper</h2>
@@ -34,9 +34,9 @@
         <img class="pull-right" src="img/amadeus.png"/>
       </div>
     </div>
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-				<textarea class="lined" id="text_to_convert" style="width:100%" rows="19" placeholder="
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <textarea class="lined" id="text_to_convert" style="width:100%" rows="19" placeholder="
   Please paste the generated warnings/errors here, ex: 
 
   mdw::Web::Framework 13-0-0-0 main (external)
@@ -54,19 +54,23 @@
   osp::Axis2c::axiom 13-0-0-0 main (internal)
 
   Then, click 'Convert' button."></textarea>
-			</div>
-		</div>
+      </div>
+    </div>
     <div class="row">
-      <div class="col-md-3 col-md-offset-2">
+      <div class="col-md-2 col-md-offset-2">
         <br/>
         <button type="button" class="btn btn-primary" id="convert">Convert</button>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-2">
+        <br/>
+        <button type="button" class="btn btn-primary" id="sort">Sort</button>
+      </div>
+      <div class="col-md-4">
         <br/>
         <p class="credit pull-right">Question & Support: <a href="mailto:kewei.hu@amadeus.com">Kewei HU</a>.</p>
       </div>
     </div>
-	</div>
+  </div>
   <div class="container hidden_block" id="hidden_info">
       <div class="col-md-8 col-md-offset-2" >
         <div class="alert alert-danger fade in" role="alert">
