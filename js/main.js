@@ -5,7 +5,7 @@ $(document).ready( function() {
 	);
     $('#copy').tooltip({
             trigger: 'click',
-            delay: { "show": 500, "hide": 100 }
+            delay: { "show": 1500, "hide": 2000 }
     });
     $("body")
       .on("copy", ".zclip", function(e) {
@@ -15,6 +15,10 @@ $(document).ready( function() {
         $('#copy').tooltip('show');
     });
 
+    $( "#back" ).click(function() {
+          parent.history.back();
+            return false;
+    });
     $( "#convert" ).click(function() {
         //clear the previous text
         $( "#textToCopy" ).text('');
